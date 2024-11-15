@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="20" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.project.MainController" styleClass="root-pane">
+    <!-- Title Label -->
+    <Label text="Car Selection and Environment" style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: white;"/>
+
+    <!-- Car ComboBox -->
+    <Label text="Choose Your Car:" style="-fx-font-size: 16px; -fx-text-fill: white;"/>
+    <ComboBox fx:id="carComboBox" prefWidth="300" styleClass="combo-box"/>
+
+    <!-- Environment ComboBox -->
+    <Label text="Choose Your Environment:" style="-fx-font-size: 16px; -fx-text-fill: white;"/>
+    <ComboBox fx:id="environmentComboBox" prefWidth="300" styleClass="combo-box"/>
+
+    <!-- Start Race Button -->
+    <Button text="Start the Race!" fx:id="startButton" onAction="#onStartRace" styleClass="start-button"/>
+
+    <!-- Result Label -->
+    <Label fx:id="resultLabel" style="-fx-font-size: 16px; -fx-text-fill: white; -fx-font-weight: bold;"/>
+</VBox>
